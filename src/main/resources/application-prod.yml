@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: ${EUREKA_HOSTNAME:eureka-service}
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: ${EUREKA_DEFAULT_ZONE:http://${EUREKA_HOSTNAME:eureka-service}:${SERVER_PORT:8761}/eureka/}
+  server:
+    enable-self-preservation: true

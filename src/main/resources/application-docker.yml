@@ -1,0 +1,7 @@
+eureka:
+  instance:
+    hostname: eureka-service
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/
