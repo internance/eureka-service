@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-service
+  cloud:
+    discovery:
+      client:
+        health-indicator:
+          enabled: true
+
+
+server:
+  port: 8761
