@@ -7,7 +7,7 @@ WORKDIR /workspace
 # Cache dependencies first
 COPY build.gradle settings.gradle ./
 COPY gradle ./gradle
-RUN gradle dependencies --no-daemon || true
+RUN gradle dependencies --no-daemon
 
 # Build the application
 COPY src ./src
